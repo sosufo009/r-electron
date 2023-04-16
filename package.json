@@ -1,15 +1,20 @@
 {
   "name": "r-electron",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "main.js",
   "author": "Ryan",
   "description": "Test",
+  "repository": "https://github.com/sosufo009/r-electron",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "build": "electron-builder -mwl",
-    "dist": "electron-builder"
+    "build-all": "electron-builder -mwl",
+    "build": "electron-builder"
   },
   "build": {
     "appId": "anticapital.ai",
